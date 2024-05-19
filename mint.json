@@ -2,17 +2,17 @@
     "$schema": "https://mintlify.com/schema.json",
     "name": "WebAgent.ai",
     "logo": {
-        "dark": "/logo/dark.svg",
-        "light": "/logo/light.svg"
+        "dark": "/logo/logo.svg",
+        "light": "/logo/logo.svg"
     },
     "favicon": "/favicon.svg",
     "colors": {
-        "primary": "#0D9373",
-        "light": "#07C983",
-        "dark": "#0D9373",
+        "primary": "#4756A4",
+        "light": "#4756A4",
+        "dark": "#4756A4",
         "anchors": {
-            "from": "#0D9373",
-            "to": "#07C983"
+            "from": "#4756A4",
+            "to": "#4756A4"
         }
     },
     "topbarLinks": [
@@ -25,12 +25,7 @@
         "name": "Dashboard",
         "url": "https://webagent.ai/chatbots"
     },
-    "tabs": [
-        {
-            "name": "API Reference",
-            "url": "api-reference"
-        }
-    ],
+    "tabs": [],
     "anchors": [],
     "navigation": [
         {
@@ -40,7 +35,6 @@
         {
             "group": "Essentials",
             "pages": [
-                "essentials/model-instructions",
                 {
                     "group": "Add Knowledge",
                     "pages": ["essentials/add-knowledge/website"]
@@ -55,26 +49,10 @@
                         "essentials/embed/wordpress"
                     ]
                 },
-                {
-                    "group": "Tips",
-                    "pages": [
-                        "essentials/tips/unlimited-messages",
-                        "essentials/tips/make-money",
-                        "essentials/tips/instruct-model"
-                    ]
-                }
-            ]
-        },
-        {
-            "group": "API Documentation",
-            "pages": ["api-reference/introduction"]
-        },
-        {
-            "group": "Endpoint Examples",
-            "pages": [
-                "api-reference/endpoint/get",
-                "api-reference/endpoint/create",
-                "api-reference/endpoint/delete"
+
+                "essentials/unlimited-messages",
+                "essentials/earn-commission",
+                "essentials/instruct-model"
             ]
         }
     ],

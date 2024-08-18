@@ -49,7 +49,10 @@
                         "essentials/embed/wordpress"
                     ]
                 },
-
+                {
+                    "group": "Integrations",
+                    "pages": ["essentials/integrations/zapier"]
+                },
                 "essentials/lead-generation",
                 "essentials/models",
                 "essentials/unlimited-messages",

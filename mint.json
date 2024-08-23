@@ -37,10 +37,12 @@
             "pages": [
                 {
                     "group": "Add Knowledge",
+                    "icon": "brain",
                     "pages": ["essentials/add-knowledge/website"]
                 },
                 {
                     "group": "Embed On Website",
+                    "icon": "code",
                     "pages": [
                         "essentials/embed/shopify",
                         "essentials/embed/squarespace",
@@ -51,13 +53,14 @@
                 },
                 {
                     "group": "Integrations",
+                    "icon": "puzzle-piece",
                     "pages": ["essentials/integrations/zapier"]
                 },
-                "essentials/lead-generation",
+                "essentials/instruct-model",
                 "essentials/models",
+                "essentials/lead-generation",
                 "essentials/unlimited-messages",
-                "essentials/earn-commission",
-                "essentials/instruct-model"
+                "essentials/earn-commission"
             ]
         }
     ],

@@ -1,90 +1,83 @@
 ---
-title: "Instructing The Chatbot"
+title: "Best Practices for Instructing Your AI Chatbot"
 description: "Learn how to instruct your chatbot to achieve desired results"
-icon: "brain"
+icon: "lightbulb"
 ---
 
-When instructing your chatbot, you're providing guidance on how to respond to user inquiries. This is where you can shape the tone, language, and personality of your chatbot's responses. Think of it as coaching your chatbot on how to engage with your customers.
+## 1. Structure Your Instructions
 
-### 1. Clear and Concise Language
+Use markdown to format your instructions. This improves readability for both you and the AI, leading to better adherence to the guidelines.
 
-When providing instructions to your chatbot, use simple and concise language to avoid confusion. Avoid using jargon, technical terms, or overly complex sentences.
+```markdown
+## Context
 
-<Warning>
-    _"Elucidate the particulars of our software's functionalities in an articulate and erudite
-    fashion, taking into account the visitor's inquiry."_
-</Warning>
+...
 
-<Check>
-    _"Answer visitor questions about our product features in a clear and concise manner."_
-</Check>
+## Core Function
 
-### 2. Specific and Relevant Goals
+...
 
-Clearly define what you want your chatbot to achieve in each interaction. This will help the chatbot provide focused and relevant responses.
+## Identity and Boundaries
 
-<Warning>
-    _"Talk about our company history and mission statement, and then mention something about
-    pricing."_
-</Warning>
+...
 
-<Check>
-    _"If a visitor asks about our pricing, provide the current pricing tiers and offer a link to our
-    pricing page located at https://domain.com/pricing"_
-</Check>
+## Guidelines
 
-### 3. Tone and Personality
+1. ...
+2. ...
+3. ...
 
-Define the tone and personality you want your chatbot to convey. This will help create a consistent and engaging experience for your visitors.
+## Fallback Response
+```
 
-<Warning>_"Be extremely formal and use overly technical language to sound smart."_</Warning>
+## 2. Define Core Function and Identity
 
-<Check>
-    _"Respond to visitors in a friendly and approachable tone, as if you were a customer support
-    representative."_
-</Check>
+Clearly define your chatbot's core function and identity. This helps the AI maintain consistency throughout interactions.
 
-### 4. Actionable and Measurable Outcomes
+```markdown
+## Core Function
 
-Provide specific, measurable, and achievable goals for your chatbot to accomplish in each interaction.
+-   As a dedicated customer support agent, your main objectives are to inform, clarify, and answer questions strictly related to the provided knowledge base.
 
-<Warning>_"Just chat with the visitor and see how it goes."_</Warning>
+## Identity and Boundaries
 
-<Check>
-    _"After answering a visitor's question, direct them to sign up for a free trial on our website
-    at https://domain.com/signup."_
-</Check>
+-   You are a diligent and focused customer support agent. Maintain this identity consistently throughout all interactions.
+```
 
-### 5. Contextual Understanding
+## 3. Explain the 'Why'
 
-Provide context about your business, product, or service to help the chatbot understand the nuances of your industry.
+When providing instructions, explain the reasoning behind them. This helps the AI understand the intent and produce more appropriate responses.
 
-<Warning>_"Pretend the visitor has no knowledge of our industry and start from scratch."_</Warning>
+Example: Confidentiality: Do not mention or allude to your access to a specific knowledge base. This maintains the integrity of our information sources and presents a seamless support experience to the user.
 
-<Check>
-    _"When discussing our product features, assume the visitor has a basic understanding of our
-    industry and its common terms."_
-</Check>
+```markdown
+## Guidelines
 
-### 6. Avoid Ambiguity and Vagueness
+1. Confidentiality: Do not mention or allude to your access to a specific knowledge base. This maintains the integrity of our information sources and presents a seamless support experience to the user.
+```
 
-Avoid using ambiguous or vague language that can confuse the chatbot or lead to inconsistent responses.
+## 4. Be Specific and Clear
 
-<Warning>_"Just talk about the benefits of our chatbot and how it's really cool."_</Warning>
+Provide clear, specific instructions. The more precise you are, the better the AI can meet your expectations.
 
-<Check>
-    _"Explain how our chatbot can help businesses improve customer support, using specific
-    examples."_
-</Check>
+| Vague                                | Specific and Clear                                                                                                                                                                                                                                                                                              |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Help users on the website.           | Assist users by answering questions about our online services, helping them navigate the website, and providing solutions to common issues.                                                                                                                                                                     |
+| Stay in character.                   | Consistently maintain your role as a polite and professional customer support agent, avoiding any actions or statements that do not align with this persona.                                                                                                                                                    |
+| Provide answers from knowledge base. | Base your answers strictly on the information provided in your knowledge base. This approach guarantees accuracy and consistency in your responses. If you encounter a query not covered by your knowledge base, use the fallback response provided below.                                                      |
+| Be professional.                     | Use proper grammar and professional language in all responses, refraining from using slang or overly casual expressions.                                                                                                                                                                                        |
+| Handle unknown questions nicely.     | If asked about something not covered in the knowledge base, respond with, "I apologize, but I don't have specific information about [user's query]. However, I'd be happy to assist you with any questions related to our products, services, or support policies. Is there anything else I can help you with?" |
 
-### 7. Consistency is Key
+## 5. Provide a Fallback Response
 
-Maintain consistency in your instructions to ensure the chatbot provides consistent responses.
+Include a fallback response for situations where the chatbot doesn't have enough information to answer a user's question.
 
-<Warning>_"Sometimes address the visitor by name, and sometimes just say 'hi'."_</Warning>
+```markdown
+## Fallback Response
 
-<Check>
-    _"Always address the visitor by name, if possible, and sign off with a friendly closing."_
-</Check>
+"I apologize, but I don't have specific information about [user's query]. However, I'd be happy to assist you with any questions related to our products, services, or support policies. Is there anything else I can help you with?"
+```
 
-By following these best practices, you'll be able to provide clear and effective instructions to your chatbot, ensuring it provides excellent customer service and supports your visitors' needs.
+Remember, the less the model has to guess about what you want, the more likely you are to get the desired result.
+
+By following these best practices, you can create a more effective, focused, and user-friendly AI chatbot for your business. Always test and refine your instructions to achieve the best possible performance.

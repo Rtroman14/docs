@@ -1,0 +1,51 @@
+---
+title: "Add To Subdomain"
+description: "Access Your Chatbot From Your Custom Subdomain"
+icon: "globe"
+---
+
+<Note>This feature is only available for users subscribed to the Business or Enterprise plan.</Note>
+
+Follow these steps to add your WebAgent.ai chatbot to your custom subdomain, allowing you to access it from a custom URL.
+
+<Steps titleSize="h2">
+    <Step title="Access Domain Forwarding Settings">
+        <ol>
+            <li>Log in to your domain registrar's website (e.g., GoDaddy, Namecheap, etc.).</li>
+            <li>Navigate to your domain's DNS Management page.</li>
+            <li>In this example, we're using GoDaddy. Click on the **Forwarding** tab.</li>
+            <li>In the **Subdomains** section, click on the **Add Forwarding** button.</li>
+        </ol>
+
+        <img style={{ borderRadius: "0.5rem" }} src="/images/godaddy-forwarding.png" alt="GoDaddy DNS Management - Forwarding tab" />
+    </Step>
+
+    <Step title="Get Your Chatbot URL">
+        <ol>
+            <li>Navigate to your WebAgent.ai dashboard.</li>
+            <li>Go to the **Publish** page.</li>
+            <li>Navigate to the **Share** tab.</li>
+            <li>Copy your chatbot's unique URL.</li>
+        </ol>
+
+        <img style={{ borderRadius: "0.5rem" }} src="/images/publish-share.png" alt="WebAgent.ai Share tab" />
+    </Step>
+
+    <Step title="Set Up Subdomain Forwarding">
+        <ol>
+            <li>In the Subdomain field, enter the subdomain you want to use (e.g., "chat").</li>
+            <li>In the URL field, paste your chatbot's unique URL.</li>
+            <li>For "Forward Type", select **Forward with masking**.</li>
+            <li>Add a Title for your chatbot.</li>
+            <li>Optionally, add a Description and Keywords.</li>
+            <li>Click the **Save** button to apply your settings.</li>
+        </ol>
+
+        <img style={{ borderRadius: "0.5rem" }} src="/images/forward-with-masking.png" alt="Subdomain forwarding setup" />
+
+        <Note>
+            After saving, it may take a few minutes for the changes to take effect. Once complete, you should be able to access your chatbot from your custom subdomain (e.g., chat.yourdomain.com).
+        </Note>
+    </Step>
+
+</Steps>

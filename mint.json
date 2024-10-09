@@ -56,9 +56,13 @@
                     "icon": "puzzle-piece",
                     "pages": ["essentials/integrations/zapier"]
                 },
+                {
+                    "group": "Tools",
+                    "icon": "wrench",
+                    "pages": ["essentials/tools/book-meeting", "essentials/tools/lead-generation"]
+                },
                 "essentials/instruct-model",
                 "essentials/models",
-                "essentials/lead-generation",
                 "essentials/unlimited-messages",
                 "essentials/earn-commission"
             ]

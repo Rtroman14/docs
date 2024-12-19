@@ -68,5 +68,10 @@
             ]
         }
     ],
-    "footerSocials": {}
+    "footerSocials": {},
+    "analytics": {
+        "posthog": {
+            "apiKey": "phc_p8SrdmXXUCujir1QCryYjxPqdZzgIlNA0OrH54FmnKV"
+        }
+    }
 }
